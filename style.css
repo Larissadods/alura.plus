@@ -90,6 +90,7 @@ body {
     display: flex;
     justify-content: center;
     list-style-type: none;
+    margin: 5em 0;
 }
 
 .dispositivos {
@@ -102,4 +103,5 @@ body {
 
 .lista-item {
     font-size: 32px;
+    color: white;
 }
