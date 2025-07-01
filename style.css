@@ -72,3 +72,34 @@ body {
     font-size: 48px;
     color: white;
 }
+
+.descricao-texto {
+    color: #C0C0C0;
+}
+
+.secundario-botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container-descricao {
+    padding: 2em;
+}
+
+.dispositivos-lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos-titulo {
+    font-size: 48px;
+}
+
+.lista-item {
+    font-size: 32px;
+}
