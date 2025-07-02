@@ -46,3 +46,13 @@ form {
     color: grey;
 }
 
+.pagamento label {
+    margin-bottom: 0.2em;
+    color: #052245;
+    display: block;
+    font-size: 20px;
+}
+
+.pagamento input {
+    margin-bottom: 0.2rem;
+}
