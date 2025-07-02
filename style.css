@@ -99,9 +99,47 @@ body {
 
 .dispositivos-titulo {
     font-size: 48px;
+    color: white;
 }
 
 .lista-item {
     font-size: 32px;
     color: white;
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape-lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista-link a{
+    text-decoration: none;
+    color: white;
+    margin-left: 1em;
+}
+
+.rodape-texto {
+    margin: 1em 0;
+    color: #C0C0C0;
+    font-size: 14px;
+}
+
+.lista-link a:hover {
+    color: #167BF7;
+}
+
+.lista-link a:active {
+    color: purple;
+}
+
+.container-botao:hover {
+    background-color: #3C92FA;
+    color: #00030C;
 }
