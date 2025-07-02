@@ -4,41 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Assinatura - Alura+ </title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class="container">
         <h3> Assine o Alura Plus </h3>
         <form action="">
-            <div class="input-field">
-                <input type="text" name="username" id="username" placeholder="Nome completo">
+            <div class="dados">
+                <input type="text" name="username" id="username" placeholder="Nome completo" required>
             </div>
 
-            <div class="input-field">
-                <input type="text" name="text" id="text" placeholder="Número de telefone">
+            <div class="dados">
+                <input type="text" name="text" id="text" placeholder="Número de telefone" required>
             </div>
 
-            <div class="input-field">
+            <div class="dados">
                 <input type="text" name="text" id="text" placeholder="E-mail (opcional)">
             </div>
 
-            <div class="input-field">
-                <input type="text" name="text" id="text" placeholder="CPF">
+            <div class="dados">
+                <input type="text" name="text" id="text" placeholder="CPF" required>
             </div> 
 
             <div class="forma-pagamento">
                 <label> <strong> Forma de pagamento </strong> </label>
                 <label>
-                    <input type="radio" name="devweb" value="frontend" checked>Front-end
+                    <input type="radio" name="cartao" value="cartao" checked> Cartão de crédito ou débito
                 </label>
                 <label>
-                    <input type="radio" name="devweb" value="backend">Back-end
-                </label>
-                <label>
-                    <input type="radio" name="devweb" value="fullstack">Fullstack
+                    <input type="radio" name="pix" value="pix"> PIX
                 </label>
             </div>
 
             <input type="submit" value="Finalizar Assinatura">
         </form>
+    </main>
 </body>
 </html>
