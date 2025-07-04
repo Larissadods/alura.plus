@@ -3,48 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Assinatura - Alura+ </title>
-    <link rel="stylesheet" href="form.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title> Cadastro </title>
+    <link rel="stylesheet" type="text/css" href="form.css" media="screen">
 </head>
 <body>
-    <main class="container">
-        <h3> Assine o Alura Plus </h3>
-        <form action="">
-            <div class="dados">
-                <input type="text" name="username" id="username" placeholder="Nome completo" required>
-                <div class="underline"> <hr> </div>
+    <div>
+        <h1 id="titulo"> Assinatura Alura+ </h1>
+        <p id="subtitulo"> Complete suas informações </p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"> <strong> Nome Completo </strong> </label>
+                <input type="text" name="nome" id="nome" required>
             </div>
 
-            <div class="dados">
-                <input type="text" name="text" id="text" placeholder="Número de telefone" required>
-                <div class="underline"> <hr> </div>
+            <div class="campo">
+                <label for="telefone"> <strong> Telefone </strong> </label>
+                <input type="text" name="telefone" id="telefone" required>
             </div>
+        </fieldset> 
 
-            <div class="dados">
-                <input type="text" name="text" id="text" placeholder="E-mail (opcional)">
-                <div class="underline"> <hr> </div>
+        <div class="campo">
+            <label for="email"> <strong> Email (opcional) </strong> </label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div class="campo">
+            <label for="cpf"> <strong> CPF </strong> </label>
+            <input type="text" name="cpf" id="cpf" required>
+        </div>
+
+        <div class="campo">
+            <label> <strong> Qual vai ser sua forma de pagamento? </strong> </label>
+            <label>
+                <input type="radio" name="devweb" value="cartao-cre" checked>Cartão de crédito
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="cartao-deb">Cartão de débito
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="pix">PIX
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="boleto">Boleto
+            </label>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Finalize sua assinatura:</strong></label><br><br>
+                <input type="checkbox" id="meses" name="meses" value="meses">
+                <label for="meses"> Assine por 12x de R$120,00 </label>
+                <input type="checkbox" id="alura" name="alura" value="alura">
+                <label for="alura"> Assinar somente o Alura+ </label>
+                <input type="checkbox" id="combo" name="combo" value="combo">
+                <label for="combo"> Assine o Combo+ </label>
             </div>
+        </fieldset>
 
-            <div class="dados">
-                <input type="text" name="text" id="text" placeholder="CPF" required>
-                <div class="underline"> <hr> </div>
-            </div> 
+        <button class="botao" type="submit" onsubmit="">Concluído</button>            
+    </form>
 
-            <div class="forma-pagamento">
-                <label> <strong> Forma de pagamento </strong> </label>
-                <label>
-                    <input type="radio" name="cartao" value="cartao" checked> Cartão de crédito ou débito
-                </label>
-                <label>
-                    <input type="radio" name="pix" value="pix"> PIX
-                </label>
-            </div>
-
-            <input type="submit" value="Finalizar Assinatura">
-        </form>
-    </main>
 </body>
 </html>
